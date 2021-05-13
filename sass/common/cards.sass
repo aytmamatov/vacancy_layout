@@ -1,0 +1,82 @@
+.cards
+  display: flex
+  align-items: center
+  justify-content: space-between
+  @media (max-width: $container-maxw)
+    flex-wrap: wrap
+  @media (max-width: 830px)
+    justify-content: center
+.card
+  min-width: 400px
+  max-width: 400px
+  min-height: 467px
+  margin-right: 20px
+  font-family: var(--font-inter)
+  color: var(--base-color-text)
+  &:last-child
+    margin-right: 0
+  @media (max-width: $container-maxw)
+    margin-bottom: 50px
+    margin-right: 0
+    &:last-child
+      margin-bottom: 0
+  @media (max-width: 400px)
+    width: 100%
+    min-width: 100%
+  &__image
+    margin-bottom: 16px
+  &__wrap
+    @media (max-width: 400px)
+      padding: 0 15px
+
+  &__title
+    font-family: var(--font-poppins)
+    font-weight: 600
+    font-size: 21.25px
+    margin-bottom: 10px
+  &__desc
+    margin-bottom: 20px
+    line-height: 1.5
+    color: var(--color-text-desc)
+  &__group
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    @media (max-width: 400px)
+      justify-content: space-between
+
+  &__date, &__type
+    font-size: var(--min-font-size)
+  &__date
+    color: var(--color-text-date)
+    margin-right: 24px
+    @media (max-width: 400px)
+      order: 1
+      margin-left: 16px
+  &__type
+    padding: 4px 16px
+    background: var(--bg-silver)
+    @media (max-width: 320px)
+      margin-bottom: 10px
+  &__inner
+    display: flex
+    align-items: center
+    margin-top: 20px
+  &__avatar
+    display: flex
+    align-items: center
+    justify-content: center
+    max-width: 36px
+    border-radius: 50%
+    overflow: hidden
+    margin-right: 9px
+  &__info
+    margin-top: auto
+    display: flex
+    flex-direction: column
+  &__name, &__position
+    font-size: var(--min-font-size)
+    line-height: 1.5
+  &__name
+  &__position
+    color: var(--color-text-position)
